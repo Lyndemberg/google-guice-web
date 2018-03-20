@@ -18,7 +18,7 @@ public class ServletConfig extends GuiceServletContextListener{
         return Guice.createInjector(new ServletModule(){
             @Override
             protected void configureServlets(){
-                serve("/*").with(FrontController.class);
+                serve("/front").with(FrontController.class);   
             }
         });
     }

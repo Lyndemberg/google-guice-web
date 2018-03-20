@@ -19,7 +19,6 @@ import javax.servlet.http.HttpServletResponse;
  * @author lyndemberg
  */
 @Singleton
-@WebServlet(name = "FrontController", urlPatterns = {"/FrontController"})
 public class FrontController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
